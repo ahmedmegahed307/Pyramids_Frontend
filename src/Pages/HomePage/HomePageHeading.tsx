@@ -46,7 +46,7 @@ function HomePageHeading({ heading, route, backgroundImageName }: Props) {
               fontWeight="700"
               color="#FFFFFF;"
             >
-              UK Field Service
+              Pyramids
             </Text>
           </HStack>
 

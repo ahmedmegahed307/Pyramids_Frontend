@@ -47,7 +47,7 @@ function BookADemoPage() {
               fontWeight="700"
               color="#FFFFFF;"
             >
-              UK Field Service
+              Pyramids
             </Text>
           </HStack>
 
@@ -108,8 +108,8 @@ function BookADemoPage() {
                 lineHeight="40px"
               >
                 Book a Demo and talk with our customer onboarding <br />{" "}
-                specialists and see how UK Field Service could fit into <br />{" "}
-                your field service business and operation.
+                specialists and see how Pyramids could fit into <br /> your
+                field service business and operation.
               </Text>
             </VStack>
           </HStack>

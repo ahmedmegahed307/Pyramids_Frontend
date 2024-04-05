@@ -105,7 +105,7 @@ export default function WithSpeechBubbles() {
     <Box bg={useColorModeValue("gray.50", "gray.700")}>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"} alignContent={"center"}>
-          <Heading>See how UK Field Service has </Heading>
+          <Heading>See how Pyramids has </Heading>
           <Heading>helped others</Heading>
         </Stack>
         <Stack

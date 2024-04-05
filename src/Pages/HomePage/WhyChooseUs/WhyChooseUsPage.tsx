@@ -58,7 +58,7 @@ function WhyChooseUsPage() {
               borderLeft="8px solid #00ABB6"
               paddingLeft={5}
             >
-              Why UK Field Service?
+              Why Pyramids?
             </Heading>
 
             <Text
@@ -69,10 +69,9 @@ function WhyChooseUsPage() {
               fontFamily="Plus Jakarta Sans, sans-serif"
               textAlign="justify"
             >
-              Watch AI become your new favourite assistant. UK Field Service
-              allows you to use AI for practical use, in the real world. You can
-              now view and manage your company's operations all within one
-              system.
+              Watch AI become your new favourite assistant. Pyramids allows you
+              to use AI for practical use, in the real world. You can now view
+              and manage your company's operations all within one system.
             </Text>
             <Text
               as="p"
@@ -83,10 +82,10 @@ function WhyChooseUsPage() {
               textAlign="justify"
             >
               Our software will suggest the best technicians for the job based
-              on their location, availability and experience. UK Field Service
-              gives real time insights on the priority, progress and job types
-              and allows you to receive monthly customer satisfaction scores
-              based on your technician's performance.
+              on their location, availability and experience. Pyramids gives
+              real time insights on the priority, progress and job types and
+              allows you to receive monthly customer satisfaction scores based
+              on your technician's performance.
             </Text>
           </GridItem>
 

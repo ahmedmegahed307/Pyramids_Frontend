@@ -588,7 +588,7 @@ const HomePageMain = () => {
                   fontWeight="400"
                   fontFamily="Plus Jakarta Sans, sans-serif"
                 >
-                  See how UK Field Service
+                  See how Pyramids
                 </Heading>
                 <Heading
                   color="#FFFFFF"
@@ -729,8 +729,8 @@ const HomePageMain = () => {
                   We've never seen any! other products that could provide such a
                   modern dashboard. It is not just a plain table with numbers,
                   but well-designed charts to alert us for important decisions.
-                  UK Field Service has given us the inspiration to help
-                  understand our business.
+                  Pyramids has given us the inspiration to help understand our
+                  business.
                 </Text>
                 <Divider
                   my={{
@@ -800,10 +800,9 @@ const HomePageMain = () => {
 
                 <Text fontSize="16px" color="#6C757D">
                   Following the latest industry trend of remote-first service,
-                  UK Field Service provides remote work mode with video
-                  consultation and diagnosis, the benefit of this is less visits
-                  which allows us to save money and results in faster
-                  completion.
+                  Pyramids provides remote work mode with video consultation and
+                  diagnosis, the benefit of this is less visits which allows us
+                  to save money and results in faster completion.
                 </Text>
                 <Divider
                   my={{

@@ -197,7 +197,7 @@ export default function ContactUsFooter() {
 
       <Flex justifyContent={"center"} marginY="41px">
         <Text fontSize="14px" fontWeight="400" color="#FFFFFF">
-          © UK Field Service 2024 - All Rights Reserved
+          © Pyramids 2024 - All Rights Reserved
         </Text>
       </Flex>
     </Flex>

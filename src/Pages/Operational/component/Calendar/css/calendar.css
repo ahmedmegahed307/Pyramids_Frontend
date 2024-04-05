@@ -1,0 +1,16 @@
+.rbc-header {
+background: #0b5e6b;
+color: whitesmoke;
+font-weight: bold;
+padding: 3px;
+}
+.rbc-active {
+    background-color: #0b5e6b !important;
+    color: whitesmoke !important;
+}
+
+  .rbc-time-view {
+    .rbc-time-gutter, .rbc-time-content {
+      border-top: 1px dotted #ccc; 
+    }
+  }

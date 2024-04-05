@@ -1,0 +1,5 @@
+export enum CompanySize {
+  UP_TO_5_USERS = "UP_TO_5_USERS",
+  UP_TO_10_USERS = "UP_TO_10_USERS",
+  UP_TO_11_PLUS_USERS = "UP_TO_11_PLUS_USERS",
+}

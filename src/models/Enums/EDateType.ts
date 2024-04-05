@@ -1,0 +1,9 @@
+export enum EDateType{
+
+    NONE='NONE',
+    LOGGED='LOGGED',
+    ASSIGNED='ASSIGNED',
+    RESOLVED='RESOLVED',
+    CLOSED='CLOSED',
+    CANCELLED='CANCELLED',
+}

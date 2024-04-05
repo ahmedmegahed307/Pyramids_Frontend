@@ -1,0 +1,14 @@
+.responsive-video {
+  position: absolute;
+  z-index: -100;
+  width: calc(100vw - 80px);
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .responsive-video {
+    width: 100%;
+  }
+}

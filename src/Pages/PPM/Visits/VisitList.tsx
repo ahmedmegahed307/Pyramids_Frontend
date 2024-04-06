@@ -245,7 +245,7 @@ const VisitList = () => {
                       header.getContext()
                     )}
 
-                    <Box color={"#1396ab"} fontSize={"md"} ml={1}>
+                    <Box color={"Primary.500"} fontSize={"md"} ml={1}>
                       <IconSortArrow />
                     </Box>
                   </Flex>

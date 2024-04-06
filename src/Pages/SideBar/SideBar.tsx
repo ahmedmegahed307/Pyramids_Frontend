@@ -324,10 +324,10 @@ const SideBarItem = ({ text, url, icon, subItems }: SideBarItemProps) => {
                     fontSize={"sm"}
                     color="grey"
                     _hover={{
-                      color: "#1396ab",
+                      color: "Primary.500",
                     }}
                     _activeLink={{
-                      color: "#1396ab",
+                      color: "Primary.500",
                     }}
                   >
                     {subItem.text}
@@ -349,7 +349,7 @@ const SideBarItem = ({ text, url, icon, subItems }: SideBarItemProps) => {
               bg: "Primary.50",
               color: "Primary.700",
               borderRadius: "8",
-              borderColor: "#1396ab",
+              borderColor: "Primary.500",
               borderRight: "none",
             }}
             to={url}
@@ -422,7 +422,7 @@ const SideBarCollapsedItem = ({ url, icon }: SideBarItemProps) => {
           _activeLink={{
             bg: "Primary.50",
             color: "Primary.700",
-            borderColor: "#1396ab",
+            borderColor: "Primary.500",
           }}
           to={url}
           display="flex"

@@ -90,9 +90,9 @@ const CustomerSatisfaction = () => {
           <Line
             type="natural"
             dataKey="pv"
-            stroke="#00ABB6"
+            stroke="#E65100"
             strokeWidth={2}
-            dot={{ fill: "#00ABB6", r: 5, strokeWidth: 2 }}
+            dot={{ fill: "#E65100", r: 5, strokeWidth: 2 }}
           />
         </LineChart>
       </ResponsiveContainer>

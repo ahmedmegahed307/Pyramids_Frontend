@@ -10,11 +10,11 @@ const CollapsedTables = ({ session, expandedRows }: CollapsedTablesProps) => {
       <Table ml={10} bg={"Neutral.100"} size="lg" shadow={"md"}>
         <Thead shadow={"none"} w={"full"}>
           <Tr>
-            <Th style={{ color: "#00ABB6" }}>ID</Th>
-            <Th style={{ color: "#00ABB6" }}>Description</Th>
-            <Th style={{ color: "#00ABB6" }}>Mode</Th>
-            <Th style={{ color: "#00ABB6" }}>Start Time</Th>
-            <Th style={{ color: "#00ABB6" }}>End Time</Th>
+            <Th style={{ color: "#E65100" }}>ID</Th>
+            <Th style={{ color: "#E65100" }}>Description</Th>
+            <Th style={{ color: "#E65100" }}>Mode</Th>
+            <Th style={{ color: "#E65100" }}>Start Time</Th>
+            <Th style={{ color: "#E65100" }}>End Time</Th>
           </Tr>
         </Thead>
         <Tbody>

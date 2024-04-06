@@ -32,19 +32,19 @@ const PPMMain = () => {
         <Tabs h={"full"} w={"full"} ml={-5}>
           <TabList>
             <Tab
-              color={activeTab === "CONTRACTS" ? "#1396ab" : "gray.500"}
+              color={activeTab === "CONTRACTS" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("CONTRACTS")}
             >
               Contracts
             </Tab>
             <Tab
-              color={activeTab === "REMINDERS" ? "#1396ab" : "gray.500"}
+              color={activeTab === "REMINDERS" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("REMINDERS")}
             >
               Reminders
             </Tab>
             <Tab
-              color={activeTab === "VISITS" ? "#1396ab" : "gray.500"}
+              color={activeTab === "VISITS" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("VISITS")}
             >
               Visits

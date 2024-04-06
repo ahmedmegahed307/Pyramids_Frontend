@@ -30,6 +30,8 @@ import useLoginValidation from "../../../hooks/Authentication/useLoginValidation
 import { EUserRole } from "../../../models/Enums/EUserRole";
 import useAuthStore from "../../../hooks/Authentication/store";
 import IsLoading from "../../GeneralComponents/IsLoading";
+import Logo1 from "../../../assets/img/logo1";
+import LogoWithoutText from "../../../assets/icons/LogoWithoutText";
 
 const schema = z.object({
   email: z.string().email().min(1, { message: "Invalid email" }),
@@ -109,12 +111,14 @@ const Login = () => {
           }}
           minH={"100vh"}
           bgSize={"cover"}
-          bg={"Primary.50"}
+          bg={"Primary.100"}
           display={{ base: "none", lg: "flex" }}
         >
           <Box position={"relative"}>
             <Box position={"absolute"} top={5} left={5}>
-              <LogoSVG />
+              <HStack>
+                <LogoWithoutText />
+              </HStack>
             </Box>
             <Box
               position={"absolute"}
@@ -126,10 +130,11 @@ const Login = () => {
             >
               <Image as={loginCover} alt="cover" />
               <Text
+                color={"white"}
                 textAlign={"center"}
                 fontSize={"4xl"}
                 fontWeight={"bold"}
-                mt={-2}
+                mt={-20}
               >
                 Smart Software, Smarter Service
               </Text>
@@ -152,9 +157,9 @@ const Login = () => {
               lg: "none",
             }}
             pt={10}
-            pl={5}
+            pl={50}
           >
-            <LogoSVG />
+            <LogoWithoutText />
           </Box>
           <Center pt={150}>
             <VStack align={"start"} spacing={5}>
@@ -256,7 +261,7 @@ const Login = () => {
               <HStack w={"full"}>
                 <Text fontSize={"md"}>Don’t have an account?</Text>
                 <Link to="/signup">
-                  <Text fontSize={"md"} color={"#1396ab"}>
+                  <Text fontSize={"md"} color={"Primary.500"}>
                     Create an account
                   </Text>
                 </Link>

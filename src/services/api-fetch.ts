@@ -3,7 +3,9 @@ import axios, { AxiosRequestConfig } from "axios";
 type QueryParams = Record<string, string | number | boolean>;
 
 const api = axios.create({
-  baseURL: "https://localhost:44357/api",
+  // baseURL: "https://localhost:44357/api",
+  baseURL: "https://ukfs.azurewebsites.net/api",
+
   headers: {
     "Access-Control-Allow-Origins": "*",
     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
@@ -14,7 +16,9 @@ const api = axios.create({
 });
 
 const apiFormData = axios.create({
-  baseURL: "https://localhost:44357/api",
+  // baseURL: "https://localhost:44357/api",
+  baseURL: "https://ukfs.azurewebsites.net/api",
+
   headers: {
     "Access-Control-Allow-Origins": "*",
     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",

@@ -55,7 +55,7 @@ function WhyChooseUsPage() {
               fontWeight="700"
               fontFamily="Plus Jakarta Sans, sans-serif"
               color="#343A40"
-              borderLeft="8px solid #00ABB6"
+              borderLeft="8px solid #E65100"
               paddingLeft={5}
             >
               Why Pyramids?
@@ -138,7 +138,7 @@ function WhyChooseUsPage() {
                     fontSize="40px"
                     fontWeight="400"
                     fontFamily="Plus Jakarta Sans, sans-serif"
-                    color="#00ABB6"
+                    color="#E65100"
                   >
                     92%
                   </Heading>
@@ -173,7 +173,7 @@ function WhyChooseUsPage() {
                     fontSize="40px"
                     fontWeight="400"
                     fontFamily="Plus Jakarta Sans, sans-serif"
-                    color="#00ABB6"
+                    color="#E65100"
                   >
                     89%
                   </Heading>
@@ -196,7 +196,7 @@ function WhyChooseUsPage() {
                     fontSize="40px"
                     fontWeight="400"
                     fontFamily="Plus Jakarta Sans, sans-serif"
-                    color="#00ABB6"
+                    color="#E65100"
                   >
                     6/7
                   </Heading>
@@ -224,7 +224,7 @@ function WhyChooseUsPage() {
         flexDir={"column"}
         gap={10}
       >
-        <Card w={"full"} h="450px" backgroundColor="#00ABB6">
+        <Card w={"full"} h="450px" backgroundColor="#E65100">
           <CardBody>
             <VStack
               w="full"
@@ -339,7 +339,7 @@ function WhyChooseUsPage() {
                       lg: 2,
                     }}
                   >
-                    <Button variant="link" size="sm" colorScheme="#00ABB6">
+                    <Button variant="link" size="sm" colorScheme="#E65100">
                       Learn More
                     </Button>
                     <Image src={arrow} boxSize="24px" />
@@ -411,7 +411,7 @@ function WhyChooseUsPage() {
                       lg: 2,
                     }}
                   >
-                    <Button variant="link" size="sm" colorScheme="#00ABB6">
+                    <Button variant="link" size="sm" colorScheme="#E65100">
                       Learn More
                     </Button>
                     <Image src={arrow} boxSize="24px" />
@@ -486,7 +486,7 @@ function WhyChooseUsPage() {
                       lg: 2,
                     }}
                   >
-                    <Button variant="link" size="sm" colorScheme="#00ABB6">
+                    <Button variant="link" size="sm" colorScheme="#E65100">
                       Learn More
                     </Button>
                     <Image src={arrow} boxSize="24px" />
@@ -535,8 +535,8 @@ function WhyChooseUsPage() {
           <Divider
             marginTop={10}
             w="100px"
-            border="4px solid #00ABB6"
-            colorScheme="#00ABB6"
+            border="4px solid #E65100"
+            colorScheme="#E65100"
             borderRadius="10px"
           />
         </VStack>

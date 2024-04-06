@@ -55,7 +55,7 @@ const CreateAttachment = ({ createModal, onSubmit }: JobAttachmentsProps) => {
                     alignItems={"center"}
                     variant={"solid"}
                     size={"sm"}
-                    bg={"#1396ab"}
+                    bg={"Primary.500"}
                   >
                     Submit
                   </Button>

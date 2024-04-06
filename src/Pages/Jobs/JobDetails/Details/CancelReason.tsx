@@ -108,7 +108,7 @@ const CancelReason = ({ jobId, cancelReasonModal }: ClientJobsProps) => {
         <ModalFooter>
           <Button
             colorScheme="blackAlpha"
-            bg={"#1396ab"}
+            bg={"Primary.500"}
             mr={3}
             isDisabled={cancelReason === ""}
             onClick={handleCancelReason}

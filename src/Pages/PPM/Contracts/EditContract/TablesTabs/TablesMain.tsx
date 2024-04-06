@@ -32,21 +32,21 @@ const TablesMain = ({ contract }: Props) => {
         <Tabs h={"full"} w={"full"} variant="enclosed-colored">
           <TabList>
             <Tab
-              color={activeTab === "VISITS" ? "#1396ab" : "gray.500"}
+              color={activeTab === "VISITS" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("VISITS")}
               fontWeight={activeTab === "VISITS" ? "bold" : "normal"}
             >
               Visits
             </Tab>
             <Tab
-              color={activeTab === "REMINDERS" ? "#1396ab" : "gray.500"}
+              color={activeTab === "REMINDERS" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("REMINDERS")}
               fontWeight={activeTab === "REMINDERS" ? "bold" : "normal"}
             >
               Reminders
             </Tab>
             <Tab
-              color={activeTab === "INVOICES" ? "#1396ab" : "gray.500"}
+              color={activeTab === "INVOICES" ? "Primary.500" : "gray.500"}
               onClick={() => setActiveTab("INVOICES")}
               fontWeight={activeTab === "INVOICES" ? "bold" : "normal"}
             >

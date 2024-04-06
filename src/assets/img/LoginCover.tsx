@@ -218,28 +218,28 @@ const loginCover = () => {
           height="21.1147"
           rx="2"
           transform="matrix(0.962976 0.269586 -0.268926 0.963161 491.501 345.608)"
-          fill="#00ABB6"
+          fill="#E65100"
         />
         <rect
           width="6.48952"
           height="32.4842"
           rx="2"
           transform="matrix(0.962976 0.269586 -0.268926 0.963161 510.182 339.031)"
-          fill="#00ABB6"
+          fill="#E65100"
         />
         <rect
           width="6.48951"
           height="49.5384"
           rx="2"
           transform="matrix(0.962976 0.269586 -0.268926 0.963161 530.391 326.979)"
-          fill="#00ABB6"
+          fill="#E65100"
         />
         <rect
           width="6.48951"
           height="26.7995"
           rx="2"
           transform="matrix(0.962976 0.269586 -0.268926 0.963161 539.899 353.254)"
-          fill="#00ABB6"
+          fill="#E65100"
         />
       </g>
       <defs>

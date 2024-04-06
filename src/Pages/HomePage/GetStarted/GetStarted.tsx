@@ -49,7 +49,7 @@ function GetStarted() {
             <Divider
               orientation="vertical"
               h="60px"
-              border="4px solid #00ABB6"
+              border="4px solid #E65100"
               borderRadius="10px"
               marginRight={5}
             />
@@ -229,7 +229,7 @@ function GetStarted() {
                   color="white"
                   h={"40px"}
                   _hover={{ bgColor: "none" }}
-                  bg={"#00ABB6"}
+                  bg={"#E65100"}
                   cursor="pointer"
                   rightIcon={<ArrowRight />}
                   size="md"

@@ -113,7 +113,7 @@ const AssignEngineer = ({ job, assignEngineerModal }: AssignJobsProps) => {
 
         <ModalFooter>
           <Button
-            bg={"#1396ab"}
+            bg={"Primary.500"}
             mr={3}
             isDisabled={assignEngineer === undefined}
             onClick={handleAssignEngineer}

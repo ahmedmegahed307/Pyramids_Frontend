@@ -33,6 +33,7 @@ import useAuthStore from "../../../hooks/Authentication/store";
 import { getCurrentUser } from "../../../services/UserService/userService";
 import { login, signup } from "../../../services/AuthService/authService";
 import useSignUpValidation from "../../../hooks/Authentication/useSignUpValidation";
+import LogoWithoutText from "../../../assets/icons/LogoWithoutText";
 const schema = z.object({
   companyName: z
     .string()
@@ -93,12 +94,14 @@ const SignUp = () => {
           }}
           minH={"100vh"}
           bgSize={"cover"}
-          bg={"Primary.50"}
+          bg={"Primary.100"}
           display={{ base: "none", lg: "flex" }}
         >
           <Box position={"relative"}>
             <Box position={"absolute"} top={5} left={5}>
-              <LogoSVG />
+              <HStack>
+                <LogoWithoutText />
+              </HStack>
             </Box>
             <Box
               position={"absolute"}
@@ -110,10 +113,11 @@ const SignUp = () => {
             >
               <Image as={loginCover} alt="cover" />
               <Text
+                color={"white"}
                 textAlign={"center"}
                 fontSize={"4xl"}
                 fontWeight={"bold"}
-                mt={-2}
+                mt={-20}
               >
                 Smart Software, Smarter Service
               </Text>
@@ -204,7 +208,7 @@ const SignUp = () => {
                     md: "lg",
                     lg: "sm",
                   }}
-                  color={"#1396ab"}
+                  color={"Primary.500"}
                   mt={5}
                   isInvalid={!!errors.email}
                 >
@@ -228,7 +232,7 @@ const SignUp = () => {
                     md: "lg",
                     lg: "sm",
                   }}
-                  color={"#1396ab"}
+                  color={"Primary.500"}
                   mt={5}
                   isInvalid={!!errors.password}
                 >
@@ -254,7 +258,7 @@ const SignUp = () => {
                     md: "lg",
                     lg: "sm",
                   }}
-                  color={"#1396ab"}
+                  color={"Primary.500"}
                   mt={5}
                   isInvalid={!!errors.confirmPassword}
                 >
@@ -342,7 +346,7 @@ const SignUp = () => {
                 </Button>
               </form>
               <Link to="/login">
-                <Text size={"md"} color={"#1396ab"}>
+                <Text size={"md"} color={"Primary.500"}>
                   Already have an account?
                 </Text>
               </Link>

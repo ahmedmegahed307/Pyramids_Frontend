@@ -7,9 +7,9 @@
 </g>
 </g>
 </g>
-<rect id="Vector" x="15.2783" y="36.7545" width="8.60744" height="14.3457" rx="4.30372" transform="rotate(-90 15.2783 36.7545)" fill="#00ABB6"/>
-<rect id="Vector_2" x="15.2783" y="26.2343" width="8.60744" height="8.60744" rx="4.30372" transform="rotate(-90 15.2783 26.2343)" fill="#00ABB6"/>
-<rect id="Vector_3" x="25.7988" y="26.2343" width="8.60744" height="12.433" rx="4.30372" transform="rotate(-90 25.7988 26.2343)" fill="#00ABB6"/>
-<rect id="Vector_4" x="30.5806" y="36.7545" width="8.60744" height="7.65106" rx="3.82553" transform="rotate(-90 30.5806 36.7545)" fill="#00ABB6"/>
+<rect id="Vector" x="15.2783" y="36.7545" width="8.60744" height="14.3457" rx="4.30372" transform="rotate(-90 15.2783 36.7545)" fill="#E65100"/>
+<rect id="Vector_2" x="15.2783" y="26.2343" width="8.60744" height="8.60744" rx="4.30372" transform="rotate(-90 15.2783 26.2343)" fill="#E65100"/>
+<rect id="Vector_3" x="25.7988" y="26.2343" width="8.60744" height="12.433" rx="4.30372" transform="rotate(-90 25.7988 26.2343)" fill="#E65100"/>
+<rect id="Vector_4" x="30.5806" y="36.7545" width="8.60744" height="7.65106" rx="3.82553" transform="rotate(-90 30.5806 36.7545)" fill="#E65100"/>
 </g>
 </svg>

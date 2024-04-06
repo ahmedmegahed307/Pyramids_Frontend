@@ -90,7 +90,7 @@ const Login = () => {
         setBackendErrorMessage("You are not authorized to access this page");
       }
     } catch (error) {
-      setBackendErrorMessage(error.response.data.message);
+      setBackendErrorMessage(error?.response?.data?.message);
     }
     setIsLoading(false);
   };

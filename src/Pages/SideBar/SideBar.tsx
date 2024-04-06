@@ -76,10 +76,11 @@ const SideBar = () => {
                   xl: "56",
                 }}
                 bg={"none"}
-                icon={<LogoSVG />}
+                icon={<LogoWithoutText />}
                 onClick={() => navigate("/")}
                 cursor={"pointer"}
                 aria-label={""}
+                _hover={{ bg: "none" }}
               ></IconButton>
             </Box>
             <Box position={"absolute"} top={5} right={0}>
@@ -165,12 +166,12 @@ const SideBar = () => {
             <Box
               position={"absolute"}
               top={7}
-              left="40%"
+              left="20%"
               transform="translateX(-40%)"
               boxSize={10}
             >
               <Icon
-                as={LogoBackground}
+                as={logo1}
                 onClick={() => navigate("/")}
                 cursor={"pointer"}
               ></Icon>

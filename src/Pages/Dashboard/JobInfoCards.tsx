@@ -12,25 +12,14 @@ import DashboardChart from "../../assets/icons/DashboardChart";
 import { FaCircle } from "react-icons/fa";
 import useAdminJobs from "../../hooks/Jobs/useAdminJobs";
 import useEngineer from "../../hooks/Settings/User/useEngineer";
+import { Chart } from "@amcharts/amcharts5";
+import JobChart from "./JobChart";
 interface Props {
   jobs: any;
 }
 const JobInfoCards = ({ jobs }: Props) => {
   const { data: users } = useEngineer(true);
 
-  // Calculate job percentages
-  const calculateJobPercentage = (status) => {
-    if (jobs) {
-      const totalJobs = jobs.length;
-      const matchingJobs = jobs?.filter(
-        (job) => job.jobStatus.status === status
-      );
-      const count = matchingJobs.length;
-      const percentage = (count / totalJobs) * 100;
-      return percentage.toFixed(1); // Round to one decimal place
-    }
-    return 0;
-  };
   return (
     <Grid
       templateColumns={{ base: "1fr", lg: "2fr 1.5fr" }}
@@ -45,7 +34,8 @@ const JobInfoCards = ({ jobs }: Props) => {
           p={5}
           minH={133}
           style={{
-            background: "linear-gradient(180deg, #02A5B0 0%, #ACDDE1 100%)",
+            background:
+              "linear-gradient(180deg,#FFCC80 0%,rgba(249, 131, 88, 1) 100%)",
           }}
         >
           <Text color={"white"} pb={8}>
@@ -68,11 +58,11 @@ const JobInfoCards = ({ jobs }: Props) => {
         </Card>
         <Card minH={133} p={5} borderRadius={10} boxShadow={"none"}>
           <Text color={"Neutral.600"} pb={8}>
-            Closed Jobs
+            Resolved Jobs
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job.jobStatus.status === "Closed").length ??
-              0}
+            {jobs?.filter((job) => job.jobStatus.status === "Resolved")
+              .length ?? 0}
           </Heading>
         </Card>
 
@@ -103,48 +93,11 @@ const JobInfoCards = ({ jobs }: Props) => {
           </Heading>
         </Card>
       </Grid>
-      <Card borderRadius={10} boxShadow={"none"} pb={10}>
-        <HStack justifyContent="space-around">
-          <VStack spacing={12} pt={6} ml={-4}>
-            <Heading size={"md"}>Traffic by job</Heading>
-            <Image as={DashboardChart} alt="chart" />
-          </VStack>
-          <VStack alignItems="flex-start" pt={16}>
-            <HStack>
-              <FaCircle color={"#66CDD3"} size={7} />
-              <Text>Open </Text>
-            </HStack>
-            <HStack>
-              <FaCircle color={"#A1E3CB"} size={7} />
-              <Text>Assigned </Text>
-            </HStack>
-            <HStack>
-              <FaCircle color={"#B1E3FF"} size={7} />
-              <Text>Resvoled </Text>
-            </HStack>
-            <HStack>
-              <FaCircle color={"#A8C5DA"} size={7} />
-              <Text>Closed </Text>
-            </HStack>
-            <HStack>
-              <FaCircle color={"#292A2B"} size={7} />
-              <Text>Cancelled </Text>
-            </HStack>
-            <HStack>
-              <FaCircle color={"#E2E2E2"} size={7} />
-              <Text>Pending </Text>
-            </HStack>
-          </VStack>
-
-          <VStack pt={16}>
-            <Text>{calculateJobPercentage("Open")}%</Text>
-            <Text>{calculateJobPercentage("Assigned")}%</Text>
-            <Text>{calculateJobPercentage("Resolved")}%</Text>
-            <Text>{calculateJobPercentage("Closed")}%</Text>
-            <Text>{calculateJobPercentage("Cancelled")}%</Text>
-            <Text>{calculateJobPercentage("Pending")}%</Text>
-          </VStack>
-        </HStack>
+      <Card borderRadius={10} boxShadow={"none"}>
+        <VStack spacing={12} pt={6}>
+          <Heading size={"md"}>Traffic by job</Heading>
+          <JobChart jobs={jobs} />
+        </VStack>
       </Card>
     </Grid>
   );

@@ -16,6 +16,7 @@
     ]
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.8.7",
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
@@ -35,6 +36,7 @@
     "@tanstack/react-query": "^4.29.13",
     "@tanstack/react-query-devtools": "^4.29.19",
     "@tanstack/react-table": "^8.9.1",
+    "amcharts": "^3.14.5",
     "axios": "^1.4.0",
     "chakra-react-select": "^4.7.6",
     "framer-motion": "^10.12.12",

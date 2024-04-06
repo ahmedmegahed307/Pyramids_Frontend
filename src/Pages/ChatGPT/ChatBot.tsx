@@ -13,6 +13,7 @@ import {
   Heading,
   InputGroup,
   InputRightElement,
+  Spacer,
 } from "@chakra-ui/react";
 import BeatLoader from "react-spinners/BeatLoader";
 
@@ -22,6 +23,7 @@ import { FluentBot_24Regular } from "../../assets/icons/IconFluentBot_24Regular"
 import { IconChatSend } from "../../assets/icons/IconChatSend";
 import { IconChatSendDisabled } from "../../assets/icons/IconChatSendDisabled";
 import HomePageLogo from "../../assets/img/HomePageLogo";
+import Logo1 from "../../assets/img/logo1";
 interface Props {
   setIsCloseClicked: () => void;
 }
@@ -149,8 +151,10 @@ const ChatBot = ({ setIsCloseClicked }: Props) => {
         pos={"fixed"}
       >
         <CardHeader color={"white"}>
-          <HStack justify={"space-between"}>
-            <HomePageLogo />
+          <HStack>
+            <Logo1 />
+            <Text fontSize={"2xl"}>Pyramids</Text>
+            <Spacer />
             <CloseButton
               onClick={() => {
                 setIsCloseClicked();

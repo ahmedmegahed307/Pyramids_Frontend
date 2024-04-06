@@ -14,6 +14,7 @@ import JobInfoCards from "./JobInfoCards";
 import SLABreachMonitor from "./SLABreachMonitor";
 import PendingInvoice from "./PendingInvoice";
 import RecentJobs from "./RecentJobs";
+import JobChart from "./JobChart";
 
 const Dashboard = () => {
   const pageTitleStore = usePageTitleStore();
@@ -29,6 +30,7 @@ const Dashboard = () => {
         Overview
       </Heading>
       <JobInfoCards jobs={jobs ?? []} />
+      <Card></Card>
       <Grid
         //  templateColumns="2fr 1.5fr"
         templateColumns={{ base: "1fr", lg: "2fr 1.5fr" }}

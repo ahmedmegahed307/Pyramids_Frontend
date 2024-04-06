@@ -1,17 +1,14 @@
 import EntityBase from "./EntityBase";
 
-export class JobStatus  extends EntityBase {
-    statusCode?: string;
-    status?: string;
+export class JobStatus extends EntityBase {
+  name?: string;
+  code?: string;
 
-    constructor(
-        statusCode = "",
-        status = "",
-    ) {
-        super();
-        this.statusCode = statusCode;
-        this.status = status;
-    }
+  constructor(name = "", code = "") {
+    super();
+    this.name = name;
+    this.code = code;
+  }
 }
 
 export default JobStatus;

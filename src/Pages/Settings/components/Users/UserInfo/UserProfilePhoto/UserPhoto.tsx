@@ -15,6 +15,7 @@ import { EditIcon } from "@chakra-ui/icons";
 import User from "../../../../../../models/User";
 import UpdateUserPhoto from "./UpdateUserPhoto";
 import useUserPhotoMutation from "../../../../../../hooks/Settings/User/UserPhoto/useUserPhotoMutation";
+import Logo1 from "../../../../../../assets/img/logo1";
 
 interface props {
   user: User;
@@ -49,15 +50,7 @@ const UserPhoto = ({ user }: props) => {
         </HStack>
 
         <Box mt={20} display="flex" justifyContent="center">
-          <Image
-            maxW={"70vw"}
-            maxH={"70vh"}
-            src={
-              user?.profilePhotoUrl ||
-              "/src/assets/img/uk_field_service_darkblue-darkblue-premium.svg"
-            }
-            alt="profile photo"
-          />
+          <Image maxW={"70vw"} maxH={"70vh"} as={Logo1} alt="profile photo" />
         </Box>
       </Flex>
 

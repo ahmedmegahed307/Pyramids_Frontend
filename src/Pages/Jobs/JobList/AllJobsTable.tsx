@@ -128,7 +128,7 @@ const columns = [
   columnHelper.accessor("jobStatus", {
     header: "Status",
     cell: (info) => {
-      const status = info.getValue()?.status;
+      const status = info.getValue()?.name ?? "-";
       const statusId = info.getValue()?.id;
 
       let color = "gray";
@@ -175,7 +175,7 @@ const columns = [
       );
     },
   }),
-  columnHelper.accessor("jobPriority", {
+  columnHelper.accessor("priority", {
     header: "Priority",
 
     cell: (info) => {
@@ -185,9 +185,9 @@ const columns = [
           <Button
             variant={"link"}
             color={
-              info.getValue().priority == "Medium"
+              info.getValue().name == "medium"
                 ? "orange"
-                : info.getValue().priority == "High"
+                : info.getValue().name == "high"
                 ? "Error.500"
                 : "Success.500"
             }
@@ -195,8 +195,8 @@ const columns = [
             aria-label={"sdd"}
           >
             {" "}
-            <Text color={"gray"}>
-              {info.getValue()?.priority.toString()}
+            <Text color={"gray"} textTransform={"capitalize"}>
+              {info.getValue()?.name.toString()}
             </Text>{" "}
           </Button>{" "}
         </>

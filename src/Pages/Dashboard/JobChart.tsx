@@ -13,9 +13,7 @@ const JobChart = ({ jobs }: Props) => {
   const calculateJobPercentage = (status) => {
     if (jobs) {
       const totalJobs = jobs.length;
-      const matchingJobs = jobs?.filter(
-        (job) => job.jobStatus.status === status
-      );
+      const matchingJobs = jobs?.filter((job) => job.jobStatus.name === status);
       const count = matchingJobs.length;
       const percentage = (count / totalJobs) * 100;
       return percentage.toFixed(1); // Round to one decimal place
@@ -73,7 +71,7 @@ const JobChart = ({ jobs }: Props) => {
       },
       {
         category: "Open",
-        value: calculateJobPercentage("Resolved"),
+        value: calculateJobPercentage("Open"),
       },
       {
         category: "Assigned",

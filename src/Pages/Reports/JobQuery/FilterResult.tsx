@@ -53,11 +53,12 @@ const columns = [
         <>
           {" "}
           <Button
+            textTransform={"capitalize"}
             variant={"link"}
             color={
-              info.getValue() == "Low"
+              info.getValue() == "low"
                 ? "Info.500"
-                : info.getValue() == "High"
+                : info.getValue() == "high"
                 ? "Error.500"
                 : "Success.500"
             }

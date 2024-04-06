@@ -14,6 +14,7 @@ import useAdminJobs from "../../hooks/Jobs/useAdminJobs";
 import useEngineer from "../../hooks/Settings/User/useEngineer";
 import { Chart } from "@amcharts/amcharts5";
 import JobChart from "./JobChart";
+import { EUserRole } from "../../models/Enums/EUserRole";
 interface Props {
   jobs: any;
 }
@@ -41,8 +42,7 @@ const JobInfoCards = ({ jobs }: Props) => {
             Open Jobs
           </Text>
           <Heading size={"md"} color={"white"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job?.jobStatus?.status === "Open").length ??
-              0}
+            {jobs?.filter((job) => job?.jobStatus?.name === "Open").length ?? 0}
           </Heading>
         </Card>
 
@@ -51,8 +51,8 @@ const JobInfoCards = ({ jobs }: Props) => {
             Assigned Jobs
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job.jobStatus.status === "Assigned")
-              .length ?? 0}
+            {jobs?.filter((job) => job.jobStatus.name === "Assigned").length ??
+              0}
           </Heading>
         </Card>
         <Card minH={133} p={5} borderRadius={10} boxShadow={"none"}>
@@ -60,8 +60,8 @@ const JobInfoCards = ({ jobs }: Props) => {
             Resolved Jobs
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job.jobStatus.status === "Resolved")
-              .length ?? 0}
+            {jobs?.filter((job) => job.jobStatus.name === "Resolved").length ??
+              0}
           </Heading>
         </Card>
 
@@ -70,8 +70,8 @@ const JobInfoCards = ({ jobs }: Props) => {
             Cancelled Jobs
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job.jobStatus.status === "Cancelled")
-              .length ?? 0}
+            {jobs?.filter((job) => job.jobStatus.name === "Cancelled").length ??
+              0}
           </Heading>
         </Card>
         <Card minH={133} p={5} borderRadius={10} boxShadow={"none"}>
@@ -79,7 +79,7 @@ const JobInfoCards = ({ jobs }: Props) => {
             Pending Jobs
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {jobs?.filter((job) => job.jobStatus.status === "Pending").length ??
+            {jobs?.filter((job) => job.jobStatus.name === "Pending").length ??
               0}
           </Heading>
         </Card>
@@ -88,7 +88,8 @@ const JobInfoCards = ({ jobs }: Props) => {
             Total Engineers
           </Text>
           <Heading size={"md"} color={"Neutral.600"} fontWeight={"bold"}>
-            {users?.filter((user) => user.userRoleId === 5).length ?? 0}
+            {users?.filter((user) => user.userRoleId === EUserRole.Engineer)
+              .length ?? 0}
           </Heading>
         </Card>
       </Grid>

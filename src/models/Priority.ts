@@ -1,16 +1,13 @@
 import { EntityBase } from "./EntityBase";
 
 export class Priority extends EntityBase {
-  priority?: string;
-  constructor(
-  
+  name?: string;
+  code?: string;
 
-    priority?: string
-  ) {
+  constructor(name = "", code = "") {
     super();
-
-    this.priority = priority;
- 
+    this.name = name;
+    this.code = code;
   }
 }
 

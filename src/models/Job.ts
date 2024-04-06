@@ -40,7 +40,7 @@ export class Job extends EntityBase {
   public contact?: Contact | null;
   public site?: Site | null;
   public engineer?: User | null;
-  public jobPriority?: Priority | null;
+  public priority?: Priority | null;
   public jobParts?: JobPart[] | null;
   public checkists?: Checklist[] | null;
   public jobSessions?: JobSession[] | null;
@@ -112,7 +112,7 @@ export class Job extends EntityBase {
     this.contact = contact;
     this.site = site;
     this.engineer = engineer;
-    this.jobPriority = jobPriority;
+    this.priority = jobPriority;
     this.jobStatus = jobStatus;
     this.id = id;
     this.jobParts = jobParts;

@@ -1,6 +1,6 @@
 export enum EUserRole {
-   Admin = 1,
-   Client = 2,
-   Engineer = 3,
-  }
-  
+  Admin = 1,
+  Engineer = 2,
+
+  Client = 3,
+}

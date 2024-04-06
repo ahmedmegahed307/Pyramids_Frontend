@@ -524,7 +524,7 @@ const ClientList = () => {
             <AbsoluteCenter overflowY="auto" maxH="800px">
               {modelSection == "NewClient" && (
                 <>
-                  <Heading size={"md"} pb={5} color={"teal"}>
+                  <Heading size={"md"} pb={5} color="Primary.700">
                     Create New Client
                   </Heading>
                   <FormControl

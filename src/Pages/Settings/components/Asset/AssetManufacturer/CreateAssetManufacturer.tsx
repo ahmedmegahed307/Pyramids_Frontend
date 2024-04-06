@@ -54,7 +54,7 @@ const CreateAssetManufacturer = ({ onSubmit }: UserFormProps) => {
 
         <DrawerBody>
           <AbsoluteCenter>
-            <Heading size={"md"} color={"teal"} pb={5}>
+            <Heading size={"md"} color="Primary.700" pb={5}>
               Create Asset Manufacturer
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

@@ -151,7 +151,7 @@ const Chat = ({ username }: ChatProps) => {
               onClick={handleSendMessage}
               disabled={newMessage.trim() === ""}
             />
-            <Button ml={2} leftIcon={<FaVideo />} colorScheme="teal">
+            <Button ml={2} leftIcon={<FaVideo />} colorScheme="Primary">
               Video Call
             </Button>
           </Flex>

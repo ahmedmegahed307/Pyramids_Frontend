@@ -62,7 +62,7 @@ const UpdateAssetManufacturer = ({ onSubmit, defaultValue }: UserFormProps) => {
 
         <DrawerBody>
           <AbsoluteCenter>
-            <Heading size={"md"} color={"teal"} pb={5}>
+            <Heading size={"md"} color="Primary.700" pb={5}>
               Update Asset Manufacturer
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

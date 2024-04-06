@@ -129,7 +129,7 @@ const CreateProduct = ({ onSubmit }: UserFormProps) => {
             overflowY={"auto"}
             maxH={"calc(100vh - 50px)"}
           >
-            <Heading size={"md"} pl={10} pb={5} color={"teal"}>
+            <Heading size={"md"} pl={10} pb={5} color="Primary.700">
               Create Product
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
@@ -337,7 +337,7 @@ const CreateProduct = ({ onSubmit }: UserFormProps) => {
         >
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader color={"teal"}>Create Category</ModalHeader>
+            <ModalHeader color="Primary.700">Create Category</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
               <FormControl>

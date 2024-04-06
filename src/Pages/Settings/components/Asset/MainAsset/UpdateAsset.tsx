@@ -111,7 +111,7 @@ const UpdateAsset = ({
         <DrawerBody>
           <AbsoluteCenter overflow={"auto"} maxH={"calc(100vh - 50px)"}>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
-              <Heading size={"md"} color={"teal"} mb={8}>
+              <Heading size={"md"} color="Primary.700" mb={8}>
                 Update Asset
               </Heading>
               <FormControl

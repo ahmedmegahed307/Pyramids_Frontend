@@ -62,7 +62,7 @@ const UpdateAssetModel = ({ onSubmit, defaultValue }: AssetTypeFormProps) => {
 
         <DrawerBody>
           <AbsoluteCenter>
-            <Heading size={"md"} color={"teal"} pb={5}>
+            <Heading size={"md"} color="Primary.700" pb={5}>
               Update Asset Model
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

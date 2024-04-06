@@ -95,7 +95,13 @@ const ClientSelect = ({ onSelectedClients }: ClientProps) => {
         <Wrap mt={2}>
           <Flex wrap="wrap">
             {selectedOptions.map((option) => (
-              <Tag key={option} variant="solid" bg={"teal"} mr={2} mb={2}>
+              <Tag
+                key={option}
+                variant="solid"
+                bg={"Primary.700"}
+                mr={2}
+                mb={2}
+              >
                 <TagLabel>
                   {filteredOptions.find((o) => o.value === option)?.label}
                 </TagLabel>

@@ -57,7 +57,7 @@ const CreateSite = ({ createSiteModal, onSubmit }: SiteFormProps) => {
         <DrawerBody>
           <AbsoluteCenter overflowY={"auto"} maxH={"calc(100vh - 50px)"}>
             <>
-              <Heading size={"md"} pb={5} color={"teal"}>
+              <Heading size={"md"} pb={5} color="Primary.700">
                 Create Site
               </Heading>
               <form onSubmit={handleSubmit(handleFormSubmit)}>

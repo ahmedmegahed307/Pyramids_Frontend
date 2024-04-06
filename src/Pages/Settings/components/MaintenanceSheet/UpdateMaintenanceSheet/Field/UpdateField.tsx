@@ -177,7 +177,7 @@ const UpdateField = ({
                         value={newOption}
                         onChange={(e) => setNewOption(e.target.value)}
                       />
-                      <Button colorScheme="teal" onClick={handleAddOption}>
+                      <Button colorScheme="Primary" onClick={handleAddOption}>
                         +
                       </Button>
                       <Button
@@ -214,7 +214,7 @@ const UpdateField = ({
             </ModalBody>
 
             <ModalFooter>
-              <Button type="submit" colorScheme="teal" mr={3}>
+              <Button type="submit" colorScheme="Primary" mr={3}>
                 Save
               </Button>
               <Button onClick={updateModal.onClose}>Cancel</Button>

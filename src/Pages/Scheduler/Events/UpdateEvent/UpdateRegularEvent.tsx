@@ -119,7 +119,7 @@ const UpdateRegularEvent = ({
         </FormControl>
       )}
       <Flex justifyContent="flex-end" mt={8}>
-        <Button colorScheme="teal" mr={2} onClick={handleEventSubmit}>
+        <Button colorScheme="Primary" mr={2} onClick={handleEventSubmit}>
           Save
         </Button>
         <Button onClick={updateEventModal.onClose}>Cancel</Button>

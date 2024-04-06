@@ -57,7 +57,11 @@ const columns = [
       const commentsToTech = info.getValue() ?? "-";
       const commentsToTechTruncate = commentsToTech.substring(0, 50);
       return (
-        <Tooltip label={commentsToTech} background={"gray.50"} color={"teal"}>
+        <Tooltip
+          label={commentsToTech}
+          background={"gray.50"}
+          color="Primary.700"
+        >
           <Text>
             {commentsToTechTruncate} {commentsToTech.length > 50 && "..."}
           </Text>

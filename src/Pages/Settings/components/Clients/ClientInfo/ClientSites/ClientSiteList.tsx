@@ -68,7 +68,7 @@ const columns = [
         const truncatedAddress = address.substring(0, 50);
 
         return (
-          <Tooltip label={address} background={"gray.50"} color={"teal"}>
+          <Tooltip label={address} background={"gray.50"} color="Primary.700">
             <Text>
               {truncatedAddress} {address.length > 50 && "..."}
             </Text>

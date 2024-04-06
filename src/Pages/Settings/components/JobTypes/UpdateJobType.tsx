@@ -55,7 +55,7 @@ const UpdateJobType = ({ onSubmit, defaultValue }: UpdateJobTypeFormProps) => {
         <DrawerBody>
           <AbsoluteCenter pl={5}>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
-              <Heading size={"md"} color={"teal"} mb={10}>
+              <Heading size={"md"} color="Primary.700" mb={10}>
                 Update JobType
               </Heading>
               <FormControl

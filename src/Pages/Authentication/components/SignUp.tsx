@@ -309,7 +309,7 @@ const SignUp = () => {
                 </FormControl>
                 {/* <Button
                 type="submit"
-                colorScheme="teal"
+                colorScheme="Primary"
                 w={"full"}
                 bg={"Primary.700"}
                 mt={5}

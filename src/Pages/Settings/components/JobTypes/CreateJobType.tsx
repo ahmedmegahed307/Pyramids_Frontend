@@ -49,7 +49,7 @@ const CreateJobType = ({ onSubmit }: JobTypeFormProps) => {
 
         <DrawerBody>
           <AbsoluteCenter pl={5}>
-            <Heading size={"md"} color={"teal"} mb={10}>
+            <Heading size={"md"} color="Primary.700" mb={10}>
               Create JobType
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

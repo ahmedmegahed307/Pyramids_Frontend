@@ -72,7 +72,7 @@ const columns = [
       const truncatedDetails = details.substring(0, 50);
 
       return (
-        <Tooltip label={details} background={"gray.50"} color={"teal"}>
+        <Tooltip label={details} background={"gray.50"} color="Primary.700">
           <Text>
             {truncatedDetails} {details.length > 50 && "..."}
           </Text>

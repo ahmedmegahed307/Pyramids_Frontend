@@ -135,7 +135,7 @@ const ChatBot = ({ setIsCloseClicked }: Props) => {
     <>
       <Card
         borderRadius={"xl"}
-        bgColor={"Secondary.600"}
+        bgColor={"Primary.600"}
         bgSize={"cover"}
         backgroundImage={"/src/assets/img/chatBack.svg"}
         mb={2}
@@ -162,7 +162,7 @@ const ChatBot = ({ setIsCloseClicked }: Props) => {
             />{" "}
           </HStack>
         </CardHeader>
-        <Divider color={"Secondary.400"}></Divider>
+        <Divider color={"Primary.50"}></Divider>
 
         <VStack w={"full"} h={"46vh"} overflowY={"scroll"}>
           <VStack h={"full"} m={10} color={"white"}>
@@ -194,10 +194,8 @@ const ChatBot = ({ setIsCloseClicked }: Props) => {
                     borderRadius={"2xl"}
                     p={5}
                     mb={2}
-                    bg={
-                      p.sender === "user" ? "Secondary.600" : "whiteAlpha.700"
-                    }
-                    color={p.sender === "user" ? "white" : "Secondary.600"}
+                    bg={p.sender === "user" ? "Primary.600" : "whiteAlpha.700"}
+                    color={p.sender === "user" ? "white" : "Primary.600"}
                   >
                     <Text fontSize={"sm"} fontWeight={"semibold"}>
                       {p.message}
@@ -210,7 +208,7 @@ const ChatBot = ({ setIsCloseClicked }: Props) => {
                   ) : (
                     <HStack>
                       <Button
-                        color={"Secondary.600"}
+                        color={"Primary.600"}
                         bg={"Auxiliary.600"}
                         fontSize={"2xl"}
                         size={"sm"}

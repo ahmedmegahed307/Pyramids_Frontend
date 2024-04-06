@@ -81,7 +81,7 @@ const UpdateProduct = ({ onSubmit, defaultValue }: ProductTypeFormProps) => {
             overflow={"auto"}
             maxH={"calc(100vh - 50px)"}
           >
-            <Heading size={"md"} color={"teal"} mb={8}>
+            <Heading size={"md"} color="Primary.700" mb={8}>
               Update Product
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

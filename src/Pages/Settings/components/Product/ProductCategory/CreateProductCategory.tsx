@@ -55,7 +55,7 @@ const CreateProductCategory = ({ onSubmit }: UserFormProps) => {
 
         <DrawerBody>
           <AbsoluteCenter>
-            <Heading size={"md"} color={"teal"} mb={8}>
+            <Heading size={"md"} color="Primary.700" mb={8}>
               Create Product Category
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

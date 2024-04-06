@@ -68,7 +68,7 @@ const CreateClientContact = ({
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader color={"teal"}>Create Client Contact</ModalHeader>
+        <ModalHeader color="Primary.700">Create Client Contact</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
           <FormControl>

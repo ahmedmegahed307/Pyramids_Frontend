@@ -89,7 +89,7 @@ const CreateAsset = ({
 
         <DrawerBody>
           <AbsoluteCenter pt={2} overflowY={"auto"} maxH={"calc(100vh - 50px)"}>
-            <Heading size={"md"} color={"teal"} mb={8}>
+            <Heading size={"md"} color="Primary.700" mb={8}>
               Create Asset
             </Heading>
             <form onSubmit={handleSubmit(handleFormSubmit)}>

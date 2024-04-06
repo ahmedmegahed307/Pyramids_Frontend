@@ -93,9 +93,9 @@ const FilterResult = ({ data }: Props) => {
           onClick={() => toggleRowExpansion(info.row.original)}
         >
           {expandedRows.has(info.row.original) ? (
-            <TriangleDownIcon color={"teal"} fontSize={"xs"} />
+            <TriangleDownIcon color="Primary.700" fontSize={"xs"} />
           ) : (
-            <TriangleUpIcon color={"teal"} fontSize={"xs"} />
+            <TriangleUpIcon color="Primary.700" fontSize={"xs"} />
           )}
         </span>
       ),

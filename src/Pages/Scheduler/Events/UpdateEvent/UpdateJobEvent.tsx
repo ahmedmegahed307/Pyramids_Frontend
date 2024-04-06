@@ -266,7 +266,7 @@ const UpdateJobEvent = ({ jobToUpdate, updateEventModal }: Props) => {
       <Flex justifyContent="flex-end" mt={10}>
         <Button
           isDisabled={job?.clientId === "" || job?.jobTypeId === ""}
-          colorScheme="teal"
+          colorScheme="Primary"
           mr={2}
           onClick={handleJobSubmit}
         >

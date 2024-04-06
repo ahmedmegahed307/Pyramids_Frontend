@@ -107,7 +107,7 @@ const columns = [
       const description = info.getValue() ?? "-";
       const truncatedDescription = description.substring(0, 50);
       return (
-        <Tooltip label={description} background={"gray.50"} color={"teal"}>
+        <Tooltip label={description} background={"gray.50"} color="Primary.700">
           <Text>
             {truncatedDescription} {description.length > 50 && "..."}
           </Text>

@@ -95,7 +95,7 @@ const UpdateAssign = ({
           <DrawerBody>
             <AbsoluteCenter>
               <>
-                <Heading size={"md"} color={"teal"}>
+                <Heading size={"md"} color="Primary.700">
                   Assign & Schedule Job
                 </Heading>
                 <Divider mb={10} />

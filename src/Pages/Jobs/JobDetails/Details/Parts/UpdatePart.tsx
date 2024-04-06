@@ -108,7 +108,7 @@ const UpdatePart = ({ onSubmit, defaultValue }: AssetTypeFormProps) => {
                   className="FormControl"
                   disabled={true}
                   backgroundColor={"gray.200"}
-                  color={"teal"}
+                  color="Primary.700"
                   fontWeight={"bold"}
                 />
               </FormControl>

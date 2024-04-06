@@ -151,7 +151,7 @@ const CreateField = ({ createModal, onSubmit }: CreateFieldProps) => {
                         value={newOption}
                         onChange={(e) => setNewOption(e.target.value)}
                       />
-                      <Button colorScheme="teal" onClick={handleAddOption}>
+                      <Button colorScheme="Primary" onClick={handleAddOption}>
                         +
                       </Button>
                       <Button
@@ -189,7 +189,7 @@ const CreateField = ({ createModal, onSubmit }: CreateFieldProps) => {
             </ModalBody>
 
             <ModalFooter mt={10}>
-              <Button type="submit" colorScheme="teal" mr={3}>
+              <Button type="submit" colorScheme="Primary" mr={3}>
                 Save
               </Button>
               <Button onClick={createModal.onClose}>Cancel</Button>

@@ -9,7 +9,7 @@ import { enIE, enUS } from "date-fns/locale";
 import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import "../Scheduler/css/Calendar.css";
+import "../Scheduler/css/calendar.css";
 import {
   Badge,
   Button,

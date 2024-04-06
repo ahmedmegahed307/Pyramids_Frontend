@@ -77,7 +77,7 @@ const EditPrioritySelect = ({
             cursor="pointer"
             onClick={() => handlePriorityClick(priority)}
           >
-            <TagLabel>{priority.priority}</TagLabel>
+            <TagLabel>{priority.name}</TagLabel>
           </Tag>
         ))}
       </HStack>

@@ -80,9 +80,7 @@ const JobList = () => {
       return data;
     } else {
       return data?.filter((job: Job) =>
-        selectedFilters?.some(
-          (filter) => filter.value === job?.jobStatus?.status
-        )
+        selectedFilters?.some((filter) => filter.value === job?.jobStatus?.name)
       );
     }
   };

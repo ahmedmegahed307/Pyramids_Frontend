@@ -3,8 +3,8 @@ import axios, { AxiosRequestConfig } from "axios";
 type QueryParams = Record<string, string | number | boolean>;
 
 const api = axios.create({
-  baseURL: "https://localhost:44357/api",
-  // baseURL: "https://ukfs.azurewebsites.net/api",
+  // baseURL: "https://localhost:44357/api",
+  baseURL: "http://pyramids.runasp.net/api",
 
   headers: {
     "Access-Control-Allow-Origins": "*",
@@ -16,8 +16,8 @@ const api = axios.create({
 });
 
 const apiFormData = axios.create({
-  baseURL: "https://localhost:44357/api",
-  // baseURL: "https://ukfs.azurewebsites.net/api",
+  // baseURL: "https://localhost:44357/api",
+  baseURL: "http://pyramids.runasp.net/api",
 
   headers: {
     "Access-Control-Allow-Origins": "*",

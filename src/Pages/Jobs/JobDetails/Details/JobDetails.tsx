@@ -232,13 +232,13 @@ const JobDetails = ({ job }: Props) => {
               <JobRowSetting
                 label="Priority"
                 icon={<IconJobPriority />}
-                value={job?.jobPriority?.priority ?? "-"}
+                value={job?.priority?.name ?? "-"}
               />
 
               <JobRowSetting
                 label="Status"
                 icon={<IconJobPriority />}
-                value={job?.jobStatus?.status ?? "-"}
+                value={job?.jobStatus?.name ?? "-"}
               />
               <JobRowSetting
                 icon={<IconJobSchedule />}

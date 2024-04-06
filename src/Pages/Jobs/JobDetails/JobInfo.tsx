@@ -30,7 +30,7 @@ const JobInfo = () => {
   console.log("job:::", job);
   useEffect(() => {
     if (job) {
-      pageTitleStore.setPageTitle(` N.${job?.id} - ${job?.jobStatus?.status} `);
+      pageTitleStore.setPageTitle(` N.${job?.id} - ${job?.jobStatus?.name} `);
     }
   }, [job]);
 

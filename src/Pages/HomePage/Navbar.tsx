@@ -75,9 +75,9 @@ export default function WithSubnavigation() {
           <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
-            color={"white"}
             bg={"Primary.700"}
             href={"/signup"}
+            color={"black"}
           >
             Sign Up
           </Button>

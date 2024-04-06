@@ -34,8 +34,7 @@ const JobInfoCards = ({ jobs }: Props) => {
           p={5}
           minH={133}
           style={{
-            background:
-              "linear-gradient(180deg,#FFCC80 0%,rgba(249, 131, 88, 1) 100%)",
+            background: "linear-gradient(180deg,#ffe2d7 0%,#cc6751 100%)",
           }}
         >
           <Text color={"white"} pb={8}>

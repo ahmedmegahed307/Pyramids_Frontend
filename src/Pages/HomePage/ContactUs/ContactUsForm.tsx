@@ -93,7 +93,7 @@ export default function ContactUsForm() {
           color="white"
           h={"55px"}
           _hover={{ bgColor: "none" }}
-          bg={"#E65100"}
+          bg={"#cc6751"}
           cursor="pointer"
           rightIcon={<ArrowRight />}
           size="md"

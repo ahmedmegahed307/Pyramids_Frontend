@@ -56,7 +56,7 @@ function BookADemoPage() {
               <HStack w="full" alignItems="start" justifyContent="start">
                 <Divider
                   h="80px"
-                  border="6px solid #E65100"
+                  border="6px solid #cc6751"
                   borderRadius="10px"
                   marginRight={5}
                   orientation="vertical"

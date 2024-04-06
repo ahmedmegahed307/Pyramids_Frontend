@@ -21,7 +21,7 @@ const LogoBackground = () => {
                 width="28"
                 height="28"
                 rx="6.47024"
-                fill="#E65100"
+                fill="#cc6751"
               />
               <Logo1 />
             </g>

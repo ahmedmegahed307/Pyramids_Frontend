@@ -54,9 +54,9 @@ const ChatBack = () => {
           y2="797.286"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0A556C" />
-          <stop offset="0.324762" stop-color="#33A3B0" />
-          <stop offset="0.611811" stop-color="#64B096" />
+          <stop stop-color="#ffe2d7" />
+          <stop offset="0.324762" stop-color="#ffad8" />
+          <stop offset="0.611811" stop-color="#cc6751" />
           <stop offset="1" stop-color="#3ABDAE" />
         </linearGradient>
         <linearGradient

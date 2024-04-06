@@ -152,7 +152,7 @@ export default function ThreeTierPricing() {
           borderColor={useColorModeValue("gray.200", "gray.500")}
           borderRadius={5}
           w={300}
-          background={"linear-gradient(15deg, #FFF 21.37%, #FFCC80 91.37%)"}
+          background={"linear-gradient(15deg, #FFF 21.37%, #ffe2d7 91.37%)"}
         >
           <HStack spacing={4} p={10}>
             <Image src={basic} alt="Basic" boxSize={12} />

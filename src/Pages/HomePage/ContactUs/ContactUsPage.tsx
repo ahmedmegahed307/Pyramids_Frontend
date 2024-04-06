@@ -45,7 +45,7 @@ const ContactUs = () => {
             paddingRight={{ base: "20px", md: "150px" }}
             paddingBottom={{ base: "20px", md: "35px" }}
           >
-            <Box borderLeft={"8px solid #E65100"} padding="10" w="full">
+            <Box borderLeft={"8px solid #cc6751"} padding="10" w="full">
               <Heading
                 fontFamily="Plus Jakarta Sans, sans-serif"
                 fontWeight="700"

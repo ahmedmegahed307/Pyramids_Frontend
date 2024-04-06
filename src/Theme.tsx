@@ -73,14 +73,14 @@ const theme = extendTheme({
 
   colors: {
     Primary: {
-      50: "#FFE0B2",
-      100: "#FFCC80",
-      200: "#FFB74D",
-      300: "#FFA726",
-      400: "#FF9800",
-      500: "#F57C00", // Main shade of orange
-      600: "#EF6C00",
-      700: "#E65100",
+      50: "#ffe2d7",
+      100: "#ffd0bb",
+      200: "#ffbe9e",
+      300: "#ffad82",
+      400: "#ff9b66",
+      500: "#cc6751 ",
+      600: "#e07b5e",
+      700: "#cc6751",
     },
 
     Secondary: {

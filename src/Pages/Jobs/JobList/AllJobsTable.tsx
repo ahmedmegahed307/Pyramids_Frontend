@@ -132,7 +132,7 @@ const columns = [
 
       switch (statusId) {
         case EJobStatus.OPEN:
-          color = "#E65100";
+          color = "#cc6751";
           background = "#E5F7F8";
 
           break;

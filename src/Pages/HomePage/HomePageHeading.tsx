@@ -52,7 +52,7 @@ function HomePageHeading({ heading, route, backgroundImageName }: Props) {
 
           <HStack w="full">
             <VStack w="full" alignItems="start" paddingLeft="129px">
-              <Box borderLeft="8px solid #E65100" padding="23px">
+              <Box borderLeft="8px solid #cc6751" padding="23px">
                 <Heading
                   color="#FFFFFF"
                   fontFamily="Plus Jakarta Sans, sans-serif"

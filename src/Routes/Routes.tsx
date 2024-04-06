@@ -56,6 +56,7 @@ import PortalAllJobs from "../Pages/ClientPortal/PortalJobs/PortalAllJobs";
 import ForgotPassword from "../Pages/Authentication/components/ForgotPassword";
 import MaintenanceSheetMain from "../Pages/Settings/components/MaintenanceSheet/MaintenanceSheetMain";
 import UpdateMaintenanceSheet from "../Pages/Settings/components/MaintenanceSheet/UpdateMaintenanceSheet/UpdateMaintenanceSheet";
+import CalendarMain from "../Pages/Scheduler/CalendarMain";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -155,10 +156,10 @@ const router = createBrowserRouter([
       //   path: "/dashboard",
       //   element: <Dashboard />,
       // },
-      // {
-      //   path: "/scheduler",
-      //   element: <CalendarMain />,
-      // },
+      {
+        path: "/scheduler",
+        element: <CalendarMain />,
+      },
       {
         path: "/ppm",
         element: <PPMMain />,

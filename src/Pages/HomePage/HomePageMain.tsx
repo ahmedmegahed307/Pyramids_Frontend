@@ -79,7 +79,7 @@ const HomePageMain = () => {
       <Box
         color={"white"}
         height={"120vh"}
-        backgroundImage={`linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${backgroundCover})`}
+        backgroundImage={`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${backgroundCover})`}
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
@@ -96,7 +96,7 @@ const HomePageMain = () => {
             <Heading color={"whiteAlpha.800"}>
               <span
                 style={{
-                  color: "#E65100",
+                  color: "#cc6751",
                   fontWeight: "bold",
                   fontSize: "4rem",
                 }}

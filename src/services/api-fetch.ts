@@ -4,7 +4,8 @@ type QueryParams = Record<string, string | number | boolean>;
 
 const api = axios.create({
   // baseURL: "https://localhost:44357/api",
-  baseURL: "http://pyramids.runasp.net/api",
+  // baseURL: "http://pyramids.runasp.net/api",
+  baseURL: "https://ahmedmegahed-001-site1.ltempurl.com/api",
 
   headers: {
     "Access-Control-Allow-Origins": "*",
@@ -17,7 +18,8 @@ const api = axios.create({
 
 const apiFormData = axios.create({
   // baseURL: "https://localhost:44357/api",
-  baseURL: "http://pyramids.runasp.net/api",
+  // baseURL: "http://pyramids.runasp.net/api",
+  baseURL: "https://ahmedmegahed-001-site1.ltempurl.com/api",
 
   headers: {
     "Access-Control-Allow-Origins": "*",

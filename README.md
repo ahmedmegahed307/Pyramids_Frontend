@@ -14,12 +14,17 @@ Pyramids is a comprehensive field service web application designed to streamline
 - **Reporting**: Generate reports to analyze performance and make informed decisions.
 - **Customization**: Tailor Pyramids to fit your company's specific needs with customizable fields and workflows.
 
-## Technologies Used
+  
+![1](https://github.com/ahmedmegahed307/Pyramids_Frontend/assets/90088312/b46b9425-8a83-4497-8646-83ae76958bb9)
+![2](https://github.com/ahmedmegahed307/Pyramids_Frontend/assets/90088312/c917eca4-2193-46a3-88c5-4ded844d3a81)
+![3](https://github.com/ahmedmegahed307/Pyramids_Frontend/assets/90088312/aac67c32-3245-4ae8-9103-c9222ee1af30)
 
+
+## Technologies Used
 Pyramids is built using the following technologies:
 
-- **ASP.NET API**:
-- **EF/Linq**:
-- **SQLServer**:
-- **HTML/CSS/JavaScript/TypScript/ChakraUI**:
-- **React/ReactQuery/Zustand**:
+- **ASP.NET API**
+- **EF/Linq**
+- **SQLServer**
+- **HTML/CSS/JavaScript/TypScript/ChakraUI**
+- **React/ReactQuery/Zustand**

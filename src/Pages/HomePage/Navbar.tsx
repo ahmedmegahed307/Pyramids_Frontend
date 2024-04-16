@@ -24,10 +24,13 @@ import {
 } from "@chakra-ui/icons";
 import { LogoSVG } from "../../assets/icons/logoSVG";
 import Logo1 from "../../assets/img/logo1";
-
-export default function WithSubnavigation() {
+import { useNavigate } from "react-router-dom";
+interface Props {
+  isLoggedin: boolean;
+}
+export default function Navbar({ isLoggedin }: Props) {
   const { isOpen, onToggle } = useDisclosure();
-
+  const navigate = useNavigate();
   return (
     <Box>
       <Flex
@@ -62,26 +65,45 @@ export default function WithSubnavigation() {
             <DesktopNav />
           </Flex>
         </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button as={"a"} variant={"link"} href={"/login"}>
-            Sign In
-          </Button>
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            bg={"Primary.700"}
-            href={"/signup"}
-            color={"black"}
+        {isLoggedin ? (
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
           >
-            Sign Up
-          </Button>
-        </Stack>
+            <Button
+              onClick={() => navigate("/dashboard")}
+              bg={"Primary.700"}
+              color={"white"}
+              _hover={{
+                bg: "Primary.200",
+              }}
+            >
+              Go to Dashboard
+            </Button>
+          </Stack>
+        ) : (
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
+          >
+            <Button as={"a"} variant={"link"} href={"/login"}>
+              Sign In
+            </Button>
+            <Button
+              as={"a"}
+              display={{ base: "none", md: "inline-flex" }}
+              bg={"Primary.700"}
+              href={"/signup"}
+              color={"white"}
+            >
+              Sign Up
+            </Button>
+          </Stack>
+        )}
       </Flex>
 
       <Collapse
@@ -166,7 +188,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "Primary.500" }}
             fontWeight={500}
           >
             {label}

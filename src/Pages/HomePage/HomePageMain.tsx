@@ -85,7 +85,7 @@ const HomePageMain = () => {
         backgroundRepeat="no-repeat"
         position={"relative"}
       >
-        <Navbar />
+        <Navbar isLoggedin={isLoggedin} />
         <Box
           position={"absolute"}
           top="50%"

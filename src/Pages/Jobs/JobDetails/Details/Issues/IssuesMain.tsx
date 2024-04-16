@@ -36,7 +36,7 @@ const IssuesMain = ({ issues, jobId, clientAssets }: JobIssuesProps) => {
       jobId: jobId,
       jobIssuePriority: data.jobIssuePriority,
       description: data.description,
-      assetId: parseInt(data.assetId),
+      assetId: data?.assetId !== "0" ? parseInt(data.assetId) : null,
       isActive: true,
     });
   };
@@ -59,7 +59,7 @@ const IssuesMain = ({ issues, jobId, clientAssets }: JobIssuesProps) => {
       jobId: jobId,
       jobIssuePriority: data.jobIssuePriority,
       description: data.description,
-      assetId: parseInt(data.assetId),
+      assetId: data?.assetId !== "0" ? parseInt(data.assetId) : null,
       isActive: true,
     };
 

@@ -50,10 +50,7 @@ export const updateJobStatus = async (
   return response;
 };
 
-export const updateJobScheduleDate = async (
-  id: number,
-  job: any
-) => {
+export const updateJobScheduleDate = async (id: number, job: any) => {
   const jobScheduleDateAPI = new Api<any>(`/Job/${id}/UpdateJobScheduleDate`);
   const response = await jobScheduleDateAPI.update(null, job);
   return response;
@@ -63,25 +60,31 @@ export const createJob = async (jobData: Job) => {
   const formData = new FormData();
   // Append individual fields from jobData
   formData.append("companyId", jobData.companyId.toString());
-  formData.append("clientId", jobData.clientId.toString() );
+  formData.append("clientId", jobData.clientId.toString());
   formData.append("siteId", jobData.siteId?.toString() || null);
   formData.append("contactId", jobData.contactId?.toString() || null);
-  formData.append("techComments", jobData?.techComments || '');
-  formData.append("jobTypeId", jobData.jobTypeId?.toString() ||null);
+  formData.append("techComments", jobData?.techComments || "");
+  formData.append("jobTypeId", jobData.jobTypeId?.toString() || null);
   formData.append("jobSubTypeId", jobData.jobSubTypeId?.toString() || null);
-  formData.append("description", jobData?.description || '');
+  formData.append("description", jobData?.description || "");
   formData.append("engineerId", jobData.engineerId?.toString() || null);
   formData.append("jobStatusId", jobData.jobStatusId.toString() || null);
   formData.append("jobPriorityId", jobData.jobPriorityId?.toString() || null);
   formData.append("scheduleDateEnd", jobData.scheduleDateEnd || null);
-  formData.append("EstimatedDuration", jobData.estimatedDuration?.toString() ||null);
-  formData.append("createdByUserId", jobData.createdByUserId?.toString() || null);
+  formData.append(
+    "EstimatedDuration",
+    jobData.estimatedDuration?.toString() || null
+  );
+  formData.append(
+    "createdByUserId",
+    jobData.createdByUserId?.toString() || null
+  );
 
   jobData.jobIssueCreateDto?.forEach((issue, index) => {
     formData.append(`jobIssueCreateDto[${index}].id`, issue.id.toString());
     formData.append(
       `jobIssueCreateDto[${index}].assetId`,
-      issue.assetId.toString()
+      issue?.assetId !== 0 ? issue.assetId.toString() : null
     );
     formData.append(
       `jobIssueCreateDto[${index}].description`,

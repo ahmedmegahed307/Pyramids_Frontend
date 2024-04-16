@@ -1,7 +1,7 @@
 import JobIssue from "../../models/JobIssue";
 import Api from "../api-fetch";
 
-const issueApi = new Api<any>("/Issue");
+const issueApi = new Api<any>("/JobIssue");
 
 export const getAllIssues = async ({ queryKey }: any) => {
   const [, { isActive, companyId }] = queryKey;
@@ -13,7 +13,7 @@ export const getIssuesByJobId = async (jobId: number): Promise<JobIssue[]> => {
   const queryParams = {
     jobId: jobId,
   };
-  const issueApi = new Api<any>("/Issue/GetIssuesByJobId");
+  const issueApi = new Api<any>("/JobIssue/GetIssuesByJobId");
   const response = await issueApi.get(queryParams);
   return response.data;
 };

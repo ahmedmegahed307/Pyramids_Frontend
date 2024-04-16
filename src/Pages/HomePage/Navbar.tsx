@@ -84,7 +84,14 @@ export default function WithSubnavigation() {
         </Stack>
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
+      <Collapse
+        in={isOpen}
+        animateOpacity
+        style={{
+          zIndex: 1000,
+          position: "relative",
+        }}
+      >
         <MobileNav />
       </Collapse>
     </Box>
@@ -209,6 +216,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         alignItems="center"
         _hover={{
           textDecoration: "none",
+          color: "Primary.500",
         }}
       >
         <Text fontWeight={600} color={"#777"}>
@@ -229,16 +237,22 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         <Stack
           mt={2}
           pl={4}
-          borderLeft={1}
+          borderLeft={5}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor={"Primary.700"}
           align={"start"}
+          color={"black"}
         >
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Box>
+              <>
+                <Box as="a" key={child.label} py={2} href={child.href}>
+                  {child.label}
+                </Box>
+                <Box as="a" key={child.label} py={2} href={child.href}>
+                  {child.subLabel}
+                </Box>
+              </>
             ))}
         </Stack>
       </Collapse>
@@ -258,13 +272,9 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "About Us",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Pyramids Field Service",
+        subLabel:
+          "Pyramids Field Service is a leading provider of field service management software",
         href: "#",
       },
     ],
@@ -273,23 +283,23 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Contact Us",
     children: [
       {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
+        label: "Email",
+        subLabel: "pyramids@support.com",
         href: "#",
       },
       {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
+        label: "Phone",
+        subLabel: "+90 546 894 05 31",
         href: "#",
       },
     ],
   },
   {
     label: "Free Trial",
-    href: "#",
+    href: "/signup",
   },
   {
     label: "Book a demo",
-    href: "#",
+    href: "/signup",
   },
 ];

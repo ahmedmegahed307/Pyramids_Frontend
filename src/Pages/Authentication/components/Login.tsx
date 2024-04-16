@@ -68,10 +68,6 @@ const Login = () => {
     setIsLoading(false);
   }, [userStore]);
 
-  if (isLoading) {
-    return <IsLoading />;
-  }
-
   const handleLogin = async (data?: LoginInValidation) => {
     setIsLoading(true);
     try {

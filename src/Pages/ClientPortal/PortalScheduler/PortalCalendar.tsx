@@ -9,7 +9,7 @@ import { enUS } from "date-fns/locale";
 import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import "../PortalScheduler/css/Calendar.css";
+import "../PortalScheduler/css/calendar.css";
 import { Badge, Card, HStack } from "@chakra-ui/react";
 import EventInfo from "./PortalEvents/EventInfo";
 import EventStyling from "./PortalEvents/EventStyling";

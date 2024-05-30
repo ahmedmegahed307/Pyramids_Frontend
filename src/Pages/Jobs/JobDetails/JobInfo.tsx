@@ -86,18 +86,6 @@ const JobInfo = () => {
           >
             Details
           </Tab>
-          <Tab
-            color={activeTab === "Sessions" ? "Primary.700" : "Neutral.500"}
-            onClick={() => setActiveTab("Sessions")}
-          >
-            Sessions
-          </Tab>
-          <Tab
-            color={activeTab === "Checklists" ? "Primary.700" : "Neutral.500"}
-            onClick={() => setActiveTab("Checklists")}
-          >
-            Checklists
-          </Tab>
 
           <Tab
             color={activeTab === "History" ? "Primary.700" : "Neutral.500"}
@@ -112,13 +100,6 @@ const JobInfo = () => {
           <TabPanel>
             <JobDetails job={job} />
           </TabPanel>
-          <TabPanel>
-            {/* <SessionsMain data={job?.jobSessions ?? []} /> */}
-          </TabPanel>
-          <TabPanel>
-            {/* <ChecklistsMain data={job?.checkists ?? []} /> */}
-          </TabPanel>
-
           <TabPanel>
             <History
               history={

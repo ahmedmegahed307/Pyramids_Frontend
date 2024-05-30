@@ -149,7 +149,7 @@ const CreateJobMain = () => {
       description: data.description,
       engineerId: parseInt(data.engineerId),
       techComments: data.commentsToTech,
-      jobStatusId: data.engineerId ? 2 : 1,
+      jobStatusId: data.engineerId ? 1 : 3,
       scheduleDateEnd: data.scheduleDate,
       estimatedDuration: parseInt(data.estimationDuration),
       createdByUserId: user?.id,

@@ -22,8 +22,10 @@ import testominalCover from "../../../assets/img/testominal-cover.png";
 import HomePageLogo from "../../../assets/img/HomePageLogo";
 import { LogoSVG } from "../../../assets/icons/logoSVG";
 import LogoWithoutText from "../../../assets/icons/LogoWithoutText";
+import { useNavigate } from "react-router-dom";
 
 export default function ClientPortalLogin() {
+  const navigate = useNavigate();
   return (
     <Card
       backgroundImage={testominalCover}
@@ -87,6 +89,7 @@ export default function ClientPortalLogin() {
                   <Text color={"Primary.700"}>Forgot password?</Text>
                 </Stack>
                 <Button
+                  onClick={() => navigate("/clientportal")}
                   bg={"Primary.700"}
                   color={"white"}
                   _hover={{

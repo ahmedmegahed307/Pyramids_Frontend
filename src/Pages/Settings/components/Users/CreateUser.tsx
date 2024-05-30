@@ -163,7 +163,7 @@ const CreateUser = ({ onSubmit }: UserFormProps) => {
                 <RequiredFormLabel label={"Role"} />{" "}
                 <Select {...register("role")} placeholder="Select role">
                   <option value="1">Admin</option>
-                  <option value="5">Engineer</option>
+                  <option value="2">Engineer</option>
                 </Select>
                 {errors.role && (
                   <FormErrorMessage>{errors.role.message}</FormErrorMessage>

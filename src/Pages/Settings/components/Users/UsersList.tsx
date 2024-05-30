@@ -65,12 +65,7 @@ const columns = [
   columnHelper.accessor("userRoleId", {
     header: "Role",
 
-    cell: (info) =>
-      info.getValue() === 1
-        ? "Admin"
-        : info.getValue() === 5
-        ? "Engineer"
-        : "Dispatcher",
+    cell: (info) => (info.getValue() === 1 ? "Admin" : "Engineer"),
   }),
 ];
 interface UsersListProps {

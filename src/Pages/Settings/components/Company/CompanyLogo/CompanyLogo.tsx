@@ -19,6 +19,7 @@ import Company from "../../../../../models/Company";
 import useCompanyMutation from "../../../../../hooks/Settings/Company/useCompanyMutation";
 import { ICompanyLogo } from "../../../../../models/Interfaces/ICompanyLogo";
 import useCompanyLogoMutation from "../../../../../hooks/Settings/Company/CompanyLogo/useCompanyLogoMutation";
+import LogoWithoutText from "../../../../../assets/icons/LogoWithoutText";
 interface props {
   company: Company;
 }
@@ -52,15 +53,7 @@ const CompanyLogo = ({ company }: props) => {
         </HStack>
 
         <Box mt={20} display="flex" justifyContent="center">
-          <Image
-            maxW={"70vw"}
-            maxH={"70vh"}
-            src={
-              company?.logoUrl ||
-              "/src/assets/img/uk_field_service_darkblue-darkblue-premium.svg"
-            }
-            alt="Logo"
-          />
+          <Image maxW={"70vw"} maxH={"70vh"} as={LogoWithoutText} alt="Logo" />
         </Box>
       </Flex>
 

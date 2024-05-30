@@ -129,7 +129,7 @@ const CreateJobEvent = ({ createEventModal, startDateDefault }: Props) => {
         job?.jobSubTypeId !== "0" ? parseInt(job.jobSubTypeId) : null,
       description: job.description,
       engineerId: parseInt(job.engineerId),
-      jobStatusId: job.engineerId ? 2 : 1,
+      jobStatusId: job.engineerId ? 1 : 3,
       scheduleDateEnd: moment(job.startDate).format("YYYY-MM-DDTHH:mm"),
       estimatedDuration: 120,
       createdByUserId: user?.id,

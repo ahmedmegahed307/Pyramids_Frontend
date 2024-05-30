@@ -20,6 +20,8 @@ import {
 } from "@chakra-ui/react";
 import testominalCover from "../../../assets/img/testominal-cover.png";
 import HomePageLogo from "../../../assets/img/HomePageLogo";
+import { LogoSVG } from "../../../assets/icons/logoSVG";
+import LogoWithoutText from "../../../assets/icons/LogoWithoutText";
 
 export default function ClientPortalLogin() {
   return (
@@ -36,7 +38,7 @@ export default function ClientPortalLogin() {
         }}
       >
         <HStack ml={10}>
-          <Image as={HomePageLogo} boxSize="43.85px" />
+          <Image as={LogoWithoutText} boxSize="30px" />
         </HStack>
         <Stack spacing={8} mx={"auto"} maxW={"lg"} py={20}>
           <Stack align={"center"} whiteSpace={"nowrap"}>

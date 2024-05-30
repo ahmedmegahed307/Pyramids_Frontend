@@ -70,13 +70,7 @@ const UserDetails = ({ user }: userProps) => {
           {/* <UserRowSetting label="TIME ZONE" value={"-"} /> */}
           <UserRowSetting
             label="Role"
-            value={
-              user?.userRoleId === 1
-                ? "Admin"
-                : user?.userRoleId === 5
-                ? "Engineer"
-                : "Dispatcher"
-            }
+            value={user?.userRoleId === 1 ? "Admin" : "Engineer"}
           />
         </VStack>
       </Flex>

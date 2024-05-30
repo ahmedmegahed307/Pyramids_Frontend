@@ -133,6 +133,9 @@ const HomePageMain = () => {
                       border={"1px solid #BDBDBD"}
                     />
                     <Button
+                      onClick={() => {
+                        navigate("/signup");
+                      }}
                       borderRadius={5}
                       borderLeftRadius={"none"}
                       border="none"

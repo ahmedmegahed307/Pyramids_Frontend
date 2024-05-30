@@ -14,6 +14,7 @@ import JobInfoCards from "./JobInfoCards";
 import SLABreachMonitor from "./SLABreachMonitor";
 import PendingInvoice from "./PendingInvoice";
 import JobChart from "./JobChart";
+import RecentJobs from "./RecentJobs";
 
 const Dashboard = () => {
   const { data: jobs, isLoading, isError } = useAdminJobs(true);
@@ -30,10 +31,26 @@ const Dashboard = () => {
         gap={10}
         p={2}
         mb={5}
-      >
-        <SLABreachMonitor />
-        <PendingInvoice />
-      </Grid>
+      ></Grid>
+
+      <Card mx={"1.5"} p={5} borderRadius={10} mb={5} boxShadow={"none"}>
+        <Text fontWeight={"bold"} size={"md"} p={2} pl={7}>
+          Recent Jobs
+        </Text>
+        {isLoading ? (
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Spinner
+              size="xl"
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="Neutral.300"
+              color="Primary.700"
+            />
+          </Box>
+        ) : (
+          <RecentJobs data={jobs?.slice(0, 5) ?? []} />
+        )}
+      </Card>
     </Box>
   );
 };

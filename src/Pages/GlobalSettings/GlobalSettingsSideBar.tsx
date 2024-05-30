@@ -123,30 +123,11 @@ const GlobalSettingsSideBar = () => {
         url={`/globalSettings/users/${user?.id}`}
       />
       <SideBarItem text="Company Settings" url="/globalSettings/company/info" />
-      <SideBarItem text="Email Triggers" />
 
       <Divider />
 
       <SideBarItem text="Job Types" url="/globalSettings/jobTypes" />
       <SideBarItem text="Job Sub Types" url="/globalSettings/jobSubTypes" />
-
-      <Divider />
-      <SideBarItem
-        text="Maintenance Sheets"
-        url="/globalSettings/maintenanceSheet"
-      />
-
-      <Divider />
-
-      <SideBarItem text="Products" url="/globalSettings/products" />
-
-      <SideBarItem
-        text="Product Categories "
-        url="/globalSettings/productCategories"
-      />
-      <SideBarItem text="Warehouses" />
-      <SideBarItem text="Engineer Stocks" />
-      <SideBarItem text="Stock Movement" />
 
       <Divider />
       <SideBarItem text="Assets" url="/globalSettings/assets" />
@@ -156,11 +137,6 @@ const GlobalSettingsSideBar = () => {
         text="Asset Manufacturers"
         url="/globalSettings/assetManufacturers"
       />
-
-      <Divider />
-      <SideBarItem text="Theme" />
-
-      <SideBarItem text="Custom Features" />
     </VStack>
   );
 

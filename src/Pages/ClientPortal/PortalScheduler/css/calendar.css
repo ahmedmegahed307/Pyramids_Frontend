@@ -1,0 +1,71 @@
+/* ---------------------------------------------General View------------------------------------------------------ */
+
+ /* header of table */
+.rbc-header {
+background: white;
+color: #878787 !important;
+font-weight: normal;
+border-left: none !important;
+border-bottom:3px solid #E2E2E2 !important;
+margin-top: -30px;
+
+}
+
+ /* action buttons */
+
+.rbc-toolbar button {
+    margin-bottom: 50px;
+    border-color: #00ABB6 ;
+    background-color: white ;
+    border-radius: 7px;
+    padding: 8px 16px;
+    color:  #00ABB6;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .rbc-active {
+    border: 1px solid var(--Primary-color, #00ABB6) !important;
+    background-color:#EBFAFA !important;
+    color:#00ABB6 !important;
+    box-shadow: none !important;
+    }
+
+
+  .rbc-toolbar button:hover {
+    background-color:#EBFAFA !important;
+    color:#00ABB6;
+  }
+  
+
+/* ---------------------------------------------Month View------------------------------------------------------ */
+
+.rbc-month-row + .rbc-month-row {
+
+  border-top: 3px solid #E2E2E2 !important;
+}
+  /* main styling of month view */
+  .rbc-month-view{
+    border-top: none !important;
+    border-color: #E2E2E2 !important;
+    border-radius: 12px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom: 3px solid #E2E2E2 !important ;
+  }
+
+/* last month and new month cell color */
+  .rbc-off-range-bg {
+    background: #F6F6F6;
+}
+/* today's cell color */
+.rbc-today {
+  background-color:#fffcfc !important;
+}
+/* ---------------------------------------------Week View------------------------------------------------------ */
+
+
+/* ---------------------------------------------Day View------------------------------------------------------ */
+
+/* ---------------------------------------------Agenda View------------------------------------------------------ */

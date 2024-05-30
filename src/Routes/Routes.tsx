@@ -57,6 +57,8 @@ import ForgotPassword from "../Pages/Authentication/components/ForgotPassword";
 import MaintenanceSheetMain from "../Pages/Settings/components/MaintenanceSheet/MaintenanceSheetMain";
 import UpdateMaintenanceSheet from "../Pages/Settings/components/MaintenanceSheet/UpdateMaintenanceSheet/UpdateMaintenanceSheet";
 import CalendarMain from "../Pages/Scheduler/CalendarMain";
+import PortalCalendar from "../Pages/ClientPortal/PortalScheduler/PortalCalendar";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -323,10 +325,10 @@ const router = createBrowserRouter([
         path: "/clientPortal/jobs/cancelled",
         element: <PortalCancelledJobs />,
       },
-      // {
-      //   path: "/clientPortal/scheduler",
-      //   element: <PortalCalendar />,
-      // },
+      {
+        path: "/clientPortal/scheduler",
+        element: <PortalCalendar />,
+      },
       {
         path: "/clientPortal/settings/account",
         element: <ClientPortalInfo />,

@@ -27,7 +27,7 @@ const schema = z.object({
   email: z.string().email({ message: "Invalid email" }),
   contactName: z.string().nonempty({ message: "Contact name is required" }),
   phoneNumber: z.string().nonempty({ message: "Phone number is required" }),
-  role: z.enum(["1", "5"], {
+  role: z.enum(["1", "2"], {
     errorMap: () => ({
       message: "Role is required",
     }),

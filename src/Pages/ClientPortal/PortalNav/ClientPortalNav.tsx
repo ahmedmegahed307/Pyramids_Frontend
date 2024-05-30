@@ -37,7 +37,7 @@ function ClientNav({ onSearch }: Props) {
     <>
       <Box w={"full"} as="nav" pt={5} mb={5}>
         <Flex alignItems={"center"} px={5}>
-          <Heading fontSize={"22px"}>Page Title</Heading>
+          {/* <Heading fontSize={"22px"}>Page Title</Heading> */}
           <Spacer />
 
           <HStack spacing={0}>
@@ -131,7 +131,7 @@ function ClientNav({ onSearch }: Props) {
                       size={"sm"}
                       bg={"Primary.500"}
                       textColor={"black"}
-                      name={client?.name}
+                      name={"Red Fire"}
                       src="https://bit.ly/broken-lisdsdsdnk"
                     />
                     <ChevronDownIcon />
@@ -153,12 +153,12 @@ function ClientNav({ onSearch }: Props) {
                       h={"30px"}
                       w={"30px"}
                       fontWeight={"bold"}
-                      name={client?.name}
+                      name={"Red Fire"}
                       src="https://bit.ly/broken-lisdsdsdnk"
                     />
                     <VStack align={"start"} spacing={0}>
                       <Heading fontWeight={"lg"} fontSize={"md"}>
-                        {client?.name}
+                        Red Fire
                       </Heading>
                       <Text color={"rgba(134, 134, 135, 1)"}>
                         {"test@gmail.com"}

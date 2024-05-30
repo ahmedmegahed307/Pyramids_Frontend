@@ -1,70 +1,79 @@
 /* ---------------------------------------------General View------------------------------------------------------ */
 
- /* header of table */
+/* header of table */
 .rbc-header {
-background: white;
-color: #878787 !important;
-font-weight: normal;
-border-left: none !important;
-border-bottom:3px solid #E2E2E2 !important;
-margin-top: -30px;
-
+  background: white;
+  color: #878787 !important;
+  font-weight: normal;
+  border-left: none !important;
+  border-bottom: 3px solid #e2e2e2 !important;
+  margin-top: -30px;
 }
 
- /* action buttons */
+/* action buttons */
 
 .rbc-toolbar button {
-    margin-bottom: 50px;
-    border-color: #00ABB6 ;
-    background-color: white ;
-    border-radius: 7px;
-    padding: 8px 16px;
-    color:  #00ABB6;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-  }
+  margin-bottom: 50px;
+  border-color: #cc6751;
+  background-color: white;
+  border-radius: 7px;
+  padding: 8px 16px;
+  color: #cc6751;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
 
-  .rbc-active {
-    border: 1px solid var(--Primary-color, #00ABB6) !important;
-    background-color:#EBFAFA !important;
-    color:#00ABB6 !important;
-    box-shadow: none !important;
-    }
+.rbc-active {
+  border: 1px solid var(--Primary-color, #cc6751) !important;
+  background-color: #ffe2d7 !important;
+  color: #cc6751 !important;
+  box-shadow: none !important;
+}
 
+.rbc-toolbar button:hover {
+  background-color: #ffe2d7 !important;
+  color: #cc6751;
+}
 
-  .rbc-toolbar button:hover {
-    background-color:#EBFAFA !important;
-    color:#00ABB6;
-  }
-  
+/* cell height */
+.rbc-event {
+  min-height: 50px !important;
+}
+.rbc-show-more {
+  padding-left: 3px !important;
+  font-size: 14px !important;
+  color: #cc6751 !important;
+}
+/* hide time label */
+.rbc-event-label {
+  display: none;
+}
 
 /* ---------------------------------------------Month View------------------------------------------------------ */
 
 .rbc-month-row + .rbc-month-row {
-
-  border-top: 3px solid #E2E2E2 !important;
+  border-top: 3px solid #e2e2e2 !important;
 }
-  /* main styling of month view */
-  .rbc-month-view{
-    border-top: none !important;
-    border-color: #E2E2E2 !important;
-    border-radius: 12px;
-    border-top-right-radius: 1px;
-    border-top-left-radius: 1px;
-    border-bottom: 3px solid #E2E2E2 !important ;
-  }
+/* main styling of month view */
+.rbc-month-view {
+  border-top: none !important;
+  border-color: #e2e2e2 !important;
+  border-radius: 12px;
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  border-bottom: 3px solid #e2e2e2 !important ;
+}
 
 /* last month and new month cell color */
-  .rbc-off-range-bg {
-    background: #F6F6F6;
+.rbc-off-range-bg {
+  background: #f6f6f6;
 }
 /* today's cell color */
 .rbc-today {
-  background-color:#fffcfc !important;
+  background-color: #fffcfc !important;
 }
 /* ---------------------------------------------Week View------------------------------------------------------ */
-
 
 /* ---------------------------------------------Day View------------------------------------------------------ */
 

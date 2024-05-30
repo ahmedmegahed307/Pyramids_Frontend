@@ -291,7 +291,7 @@ const router = createBrowserRouter([
     path: "/clientPortal",
     element: <ClientPortalApp />,
     children: [
-      { index: true, element: <PortalOpenJobs /> },
+      { index: true, element: <PortalAllJobs /> },
 
       {
         path: "/clientPortal/newRequest",
